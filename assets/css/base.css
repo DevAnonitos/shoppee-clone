@@ -1,0 +1,124 @@
+:root
+{
+    --tomato-color: #FF6347;
+    --color-primary: #FFF0F5;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+*
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    /* hack */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width
+{
+    width: 100%;
+}
+
+.grid__row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* animation CSS */
+@keyframes FaceIN
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-10px);
+        transform: scale(0.8);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+        transform: scale(1);
+    }
+}
+
+@keyframes headerNotifi
+{
+    from
+    {
+        opacity: 0.4;
+        transform: translateY(-10px);
+        transform: scale(0.5);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+        transform: scale(1);
+    }
+}
+
+@keyframes growth
+{
+    from
+    {
+        transform: scale(0.5);
+    }
+    to
+    {
+        transform: scale(1.1);
+    }
+}
+
+/* modal */
+.modal
+{
+    position: fixed;
+    display: flex;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    animation: FaceIN 0.1s linear;
+}
+
+.modal__overplay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.25);
+    z-index: 1;
+    display: none;
+}
+
+.modal__body
+{
+    position: relative;
+    margin: auto;
+    width: 470px;
+    height: 450px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    z-index: 1;
+    animation: growth 0.5s ease-in-out;
+    display: none;
+}
