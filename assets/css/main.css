@@ -705,6 +705,7 @@ i .header__search-selection-icon
 /* header sort bar */
 .header__sort-bar
 {
+    display: none;
     position: fixed;
     top: var(--header-height);
     left: 0;
@@ -716,7 +717,6 @@ i .header__search-selection-icon
     z-index: 100;
     margin: 0;
     padding-left: 0;
-    display: flex;
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -746,6 +746,15 @@ i .header__search-selection-icon
     left: 0;
     height: 60%;
     border-left: 1px solid #e8e8e8;
+    transform: translateY(-50%);
+}
+
+.header__sort-items--active .header__sort-link{
+    color: var(--tomato-color);
+}
+
+.header__sort-items::first-child .header__sort-link::before{
+    border-left: none;
 }
 
 /* author modal */

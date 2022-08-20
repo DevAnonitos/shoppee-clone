@@ -27,6 +27,10 @@
         text-align: right;
     }
 
+    .header__sort-bar{
+        display: flex;
+    }
+
     .header__cart-list
     {
         position: fixed;
@@ -68,6 +72,11 @@
         z-index: 999999;
         width: 100%;
     }
+
+    .header__sort-bar{
+        display: flex;
+    }
+
 
     .header__cart-list
     {

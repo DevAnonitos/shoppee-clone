@@ -6,9 +6,9 @@
 //     }
 // }
 
-// function myFunction() {
-//     alert("Shopee will be open soon!");
-// }
+function myFunction() {
+    alert("Hello! I am an alert box!");
+}
 // like event
 function like() {
     document.getElementById("like").style.color = "#eb3b5a";
