@@ -87,4 +87,8 @@
         padding: 0 calc((100vw - 1024px) / 2);
     }
 
+    .header-with-search{
+        justify-content: space-between;
+    }
+
 }

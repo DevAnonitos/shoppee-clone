@@ -6,9 +6,9 @@
 //     }
 // }
 
-function myFunction() {
-    alert("Hello! I am an alert box!");
-}
+// function myFunction() {
+//     alert("Hello! I am an alert box!");
+// }
 // like event
 function like() {
     document.getElementById("like").style.color = "#eb3b5a";
@@ -17,21 +17,10 @@ for (var i = 0; i < document.getElementById("like").length; i++) {
     document.getElementById("like")[i].addEventListener("click", like);
 }
 
-// function run(){
-// 	var person = {
-// 		name: "Tuan Phong",
-// 		age: 1,
-// 		addr: "Ha Noi",
-// 		is_boy: true
-// 	};
-// 	for (i  in person) {
-// 	  console.log(`${i}` + ' is ' + person[i])
-// 	}
-// }
+function Scroll(){
+    window.scrollTo(0,document.body.scrollHeight);
 
-// run();
-
-// on scroll
+}
 
 
 
