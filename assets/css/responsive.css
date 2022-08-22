@@ -60,6 +60,15 @@
         display: none;
     }
 
+    .header-with-search{
+        justify-content: space-between;
+    }
+
+    .header__cart,
+    .header__logo{
+        width: unset;
+    }
+
     .header__cart
     {
         width: 8px;
@@ -86,9 +95,4 @@
         width: 100%;
         padding: 0 calc((100vw - 1024px) / 2);
     }
-
-    .header-with-search{
-        justify-content: space-between;
-    }
-
 }
